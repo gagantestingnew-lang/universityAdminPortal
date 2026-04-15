@@ -4,7 +4,8 @@
   "scripts": {
   "dev": "next dev",
   "build": "next build",
-  "deploy": "gh-pages -d out"
+  "export": "next export",
+  "deploy": "next build && touch out/.nojekyll && gh-pages -d out -t true"
 },
   "dependencies": {
     "@supabase/supabase-js": "^2.0.0",
